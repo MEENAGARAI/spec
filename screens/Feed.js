@@ -55,7 +55,7 @@ export default class Feed extends Component {
                     });
                 }
                 this.setState({ posts: posts })
-                this.props.setUpdateToTrue();
+                this.props.setUpdateToFalse();
             }, function (errorObject) {
                 console.log("The read failed: " + errorObject.code);
             })
